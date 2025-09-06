@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <h1>Hii</h1>
-</head>
-<body>
-    <p>This is body 
-        !!!!
-    </p>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-orange-400">
+      <div class="flex items-center justify-between mx-20 py-4">
+        <div class="w-12 h-12">
+          <img src="./image/logo.webp" alt="logo" />
+        </div>
+        <div class="bg-black p-4 rounded-full">
+          <ul class="flex items-center justify-between gap-5 text-white">
+            <li><a href="#" class="!text-xl hover:text-orange-300">Home</a></li>
+            <li><a href="#" class="!text-xl hover:text-orange-300">Work</a></li>
+            <li>
+              <a href="#" class="!text-xl hover:text-orange-300">About</a>
+            </li>
+            <li>
+              <a href="#" class="!text-xl hover:text-orange-300">Project</a>
+            </li>
+            <li>
+              <a href="#" class="!text-xl hover:text-orange-300">Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section Starts Here -->
+    <div class="hero">
+      <div class="relative">
+        <img src="./image/banner.webp" class="h-[500px] object-cover w-full" />
+
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <!-- Overlay effect -->
+
+        <div
+          class="absolute inset-0 top-[100px] left-[50px] flex flex-col justify-center"
+        >
+          <h1 class="text-[60px] text-white font-bold">
+            <span class="text-orange-600">Hello</span>, I am Vishwajeet
+          </h1>
+          <p class="text-[20px] max-w-[600px] text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            dignissimos dolorum quos aliquid magni, doloribus mollitia deleniti
+            officiis eligendi illum inventore et, veritatis sunt. Exercitationem
+            iure non temporibus explicabo nam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section Ends Here -->
+    <!-- About Us Section Starts  -->
+    <section class="bg-orange-100">
+      <div
+        class="container flex items-center justify-between gap-10 py-20 mx-auto"
+      >
+        <div>
+          <img src="./image/about.jpg" alt="about" class="object-cover" />
+        </div>
+        <div>
+          <h2 class="text-orange-500 font-bold text-[40px] py-4">About Me</h2>
+          <p class="text-justify">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptas
+            eligendi iusto. Omnis, officiis? Asperiores magni veritatis esse
+            recusandae exercitationem voluptatem dolorum incidunt obcaecati
+            voluptates minima eaque, consequuntur, perspiciatis aspernatur!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptas
+            eligendi iusto. Omnis, officiis? Asperiores magni veritatis esse
+            recusandae exercitationem voluptatem dolorum incidunt obcaecati
+            voluptates minima eaque, consequuntur, perspiciatis aspernatur!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section Ends  -->
+  </body>
 </html>
